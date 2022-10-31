@@ -1,0 +1,52 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+
+    while(n--)
+    {
+        int x;
+        cin>>x;
+        int l=(x/2)+1;
+        int r=1;
+
+
+        if(x<4)
+        {
+            for(int i=1;i<=x;i++)
+            {
+                cout<<i<<" ";
+
+            }
+
+            cout<<endl;
+        }
+
+        if(x>=4)
+        {
+
+            while(l<=x)
+            {
+                cout<<l<<" ";
+
+                l++;
+
+                cout<<r<<" ";
+                r++;
+
+                if(l==x and x%2==1)
+                {
+                    cout<<l<<endl;
+                    break;
+                }
+            }
+            cout<<endl;
+
+        }
+    }
+
+}
